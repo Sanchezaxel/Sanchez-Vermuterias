@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Vermut</title>
+    <link rel="stylesheet" href="styles2.css">
+    
+</head>
+    <header>
+        <div class="logo-container">
+            <img src="images.png" alt="Logo pequeño de la empresa">
+        </div>
+
+        <h1>¡Bienvenido Vermuteria El Ché!</h1>
+        <style> h2 {text-align: center;} </style>
+    </header>
+    <body>
+    <main>
+        <section class="vermut-column">
+            <div class="product-box">
+                <h2>Vermut Blanco</h2>
+                <img src="vermutBlanco.png" alt="Vermut Blanco" class="imagen-vermut">
+                <p>El Vermut Blanco: una mezcla fresca de vino blanco y hierbas, equilibrada y refrescante. Ideal para coctelería elegante o disfrutar con hielo. Un toque de sofisticación en cada sorbo.</p>
+                <div class="button-container">
+                    <button onclick="comprarVermut('Vermut Blanco')">Comprar</button>
+                    <div class="price-box">
+                        <p>Precio: $3.700</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="vermut-column">
+            <div class="product-box">
+                <h2>Vermut Rojo</h2>
+                <img src="vermutRojo.jpg" alt="Vermut Rojo" class="imagen-vermut">
+                <p>
+                    El Vermut Rojo es una fusión cautivadora de vino tinto y una selección armoniosa de hierbas y especias. Su perfil robusto revela notas cálidas y ligeramente amargas, creando una experiencia de sabor única. Perfecto para cócteles clásicos o simplemente con hielo, el Vermut Rojo es la elección audaz para quienes buscan una bebida rica y llena de carácter.
+                    
+                    
+                    
+                    </p>
+                <div class="button-container">
+                    <button onclick="comprarVermut('Vermut Rojo')">Comprar</button>
+                    <div class="price-box">
+                        <p>Precio: $12.000</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="vermut-column">
+            <div class="product-box">
+                <h2>Vermut Bianco</h2>
+                <img src="vermutBianco.webp" alt="Vermut Bianco" class="imagen-vermut">
+                <p>El Vermut Bianco es una deliciosa mezcla de vino blanco y hierbas aromáticas. Su sabor equilibrado presenta notas suaves y refrescantes, ideal para disfrutar solo o en cócteles. Una elección elegante y sofisticada.
+
+
+
+
+                </p>
+                <div class="button-container">
+                    <button onclick="comprarVermut('Vermut Bianco')">Comprar</button>
+                    <div class="price-box">
+                        <p>Precio: $15.000</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <script>
+        function comprarVermut(nombreVermut) {
+            var confirmacion = confirm("¿Desea comprar " + nombreVermut + "?");
+
+            if (confirmacion) {
+                alert("¡Compra realizada con éxito! Disfrute de su Vermut " + nombreVermut);
+            }
+        }
+    </script>
+
+     <footer>
+        <p>instagram: @VermuteriaElChé</p>
+    </footer>
+
+
+</body>
+</html>
